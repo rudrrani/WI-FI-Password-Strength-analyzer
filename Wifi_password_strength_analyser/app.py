@@ -27,7 +27,7 @@ def set_background(image_file):
     st.markdown(page_bg_img, unsafe_allow_html=True)
 
 # ✅ Apply background
-set_background("assets/cyber.png")
+set_background("image/cyber.png")
 
 st.set_page_config(
     page_title="Wi-Fi Password Strength Analyzer",
@@ -66,6 +66,7 @@ if password:
     st.subheader("🛠️ Tips to Improve")
     for tip in give_tips(password):
         st.write(f"• {tip}")
+
 
 
 
