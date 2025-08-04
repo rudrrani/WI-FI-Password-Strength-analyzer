@@ -18,7 +18,7 @@ def set_background(image_file):
     page_bg_img = f"""
     <style>
     .stApp {{
-        background-image: url("data:image/jpg;base64,{bin_str}");
+        background-image: url("data:image/png;base64,{bin_str}");
         background-size: cover;
         background-attachment: fixed;
     }}
@@ -27,7 +27,7 @@ def set_background(image_file):
     st.markdown(page_bg_img, unsafe_allow_html=True)
 
 # ✅ Apply background
-set_background("cyber.jpg")
+set_background("cyber.png")
 
 st.set_page_config(
     page_title="Wi-Fi Password Strength Analyzer",
